@@ -1,0 +1,111 @@
+.mail {
+    width: 20px;
+    height: 20px;
+    padding: 50px;
+    padding-top: 94px;
+    padding-left: 113px;
+    padding-right: 5px;
+}
+
+    .insta {
+    width: 20px;
+    height: 20px;
+    padding: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 94px;
+    }
+    .f {
+    width: 20px;
+    height: 20px;
+    padding: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 94px;
+    }
+    .t {
+    width: 20px;
+    height: 20px;
+    padding: 50px;
+    padding-top: 94px;
+    padding-left: 5px;
+    } 
+
+    .fa {
+        padding: px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      .fa-facebook {
+        margin-right: px;
+        padding-top : 75px; ;
+        padding: px;
+        margin-right: px;
+        background: #000000;
+        color: white;
+      }
+      
+      .fa-twitter {
+        margin-right: px;
+        padding: px;
+        margin-left: -19px;
+        background: #000000;
+        color: white;
+      }
+      
+      .fa-instagram {
+        margin-right: -4px;
+        padding-left: -26px;
+        background: #000000;
+        color: white;
+      }
+      .fa-google {
+        padding: px;
+      background:black ;
+      color: white;
+      }
+
+    .name {
+     text-align: center;
+     margin-top: -137px;
+     font-weight: lighter;
+    }
+    .pic{
+        margin-top: 96px;
+        width: 180px;
+        height: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 85px
+    }
+    .ab{
+        text-align: center ; margin: 83px;
+    }
+    .about{
+        text-align: center;
+        color: grey;
+        font-family: cursive;
+        margin-top: -26px;
+    }
+    .back{
+        background-image: url(images/background.webp);
+        height : 230px ;
+         width : 1575px;
+         
+    }
+     .back p{
+        text-align: center;
+        font-family: bold monospace;
+        font-size: 20px;
+        margin-top: 100px;
+        padding: 50px;
+     }

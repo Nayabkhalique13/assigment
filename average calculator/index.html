@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+</head>
+
+<body>
+    <h1 style="font-family:cursive ;">Average Calculator</h1>
+    <form onsubmit="average (); return false">
+
+        <label for="grade1marks">Grade #1:</label>
+        <input type="number" min="1" required id="grade10marks" placeholder="enter your grade#1 marks"> <br> <br>
+        <label for="grade2marks">Grade #2:</label>
+        <input type="number" min="1" required id="grade2marks" placeholder="enter your grade#2 marks"> <br> <br>
+        <label for="grade3marks">Grade #3:</label>
+        <input type="number" min="1" required id="grade3marks" placeholder="enter your grade#3 marks"> <br> <br>
+        <label for="grade4marks">Grade #4:</label>
+        <input type="number" min="1" required id="grade4marks" placeholder="enter your grade#4 marks"> <br> <br>
+        <label for="grade5marks">Grade #5:</label>
+        <input type="number" min="1" required id="grade5marks" placeholder="enter your grade#5 marks"> <br> <br>
+        <label for="grade6marks">Grade #6:</label>
+        <input type="number" min="1" required id="grade6marks" placeholder="enter your grade#6 marks"> <br> <br>
+        <label for="grade7marks">Grade #7:</label>
+        <input type="number" min="1" required id="grade7marks" placeholder="enter your grade#7 marks"> <br> <br>
+        <label for="grade9marks">Grade #8:</label>
+        <input type="number" min="1" required id="grade8marks" placeholder="enter your grade#8 marks"> <br> <br>
+        <label for="grade9marks">Grade #9:</label>
+        <input type="number" min="1" required id="grade9marks" placeholder="enter your grade#9 marks"> <br> <br>
+        <label for="grade10marks">Grade #10:</label>
+        <input type="number" min="1" required id="grade10marks" placeholder="enter your grade#10 marks"> <br> <br> <br>
+        <button type="submit">Average</button>
+    </form>
+    <script>
+        function average() {
+            let grade1marks = +document.querySelector("#grade1marks").value;
+            let grade2marks = +document.querySelector("#grade2marks").value;
+            let grade3marks = +document.querySelector("#grade3marks").value;
+            let grade4marks = +document.querySelector("#grade4marks").value;
+            let grade5marks = +document.querySelector("#grade5marks").value;
+            let grade6marks = +document.querySelector("#grade6marks").value;
+            let grade7marks = +document.querySelector("#grade7marks").value;
+            let grade8marks = +document.querySelector("#grade8marks").value;
+            let grade9marks = +document.querySelector("#grade9marks").value;
+            let grade10marks = +document.querySelector("#grade10marks").value;
+
+            //grade1marks = parseInt(grade1marks);
+            //grade2marks = parseInt(grade2marks);
+            //grade3marks = parseInt(grade3marks);
+            //grade4marks = parseInt(grade4marks);
+            //grade5marks = parseInt(grade5marks);
+            //grade6marks = parseInt(grade6marks);
+            //grade7marks = parseInt(grade7marks);
+            //grade8marks = parseInt(grade8marks);
+            //grade9marks = parseInt(grade9marks);
+            //grade10marks = parseInt(grade10marks);
+
+            let average = (grade1marks + grade2marks + grade3marks + grade4marks + grade5marks + grade6marks + grade7marks + grade8marks + grade9marks + grade10marks) / 10;
+            //console. log(result)
+            // document.querySelector("#result").innerHTML = `your average is ${result}%`;
+            console.log ( result )
+           // document.querySelector("#average").innerHTML = "Your average is" + average + "%";
+           document.querySelector("#average").value =average
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Marking</title>
+</head>
+
+<body>
+    <h2 style="font-family:cursive ;"> Type your percentage here to check your Grade </h2>
+    <form onsubmit="GradeCheck(); return false">
+        <label for="percent">Percentage:</label>
+        <input type="percent" id="percent">
+        <input type="submit" value="check">
+    </form>
+    <p id="result"></p>
+    <script>
+        function GradeCheck() {
+            let percent = +document.querySelector("#percent").value;
+
+            if (percent >= 90 && percent <= 100) {
+                document.querySelector("#result")
+                    .innerHTML = "CONGRATULATIONS! You have got A+ Grade ;)";
+            }
+            else if (percent >= 80 && percent < 90) {
+                document.querySelector("#result")
+                    .innerHTML = "CONGRATULATIONS! You have got A Grade ;)";
+            }
+            else if (percent >= 70 && percent <  80) {
+                document.querySelector("#result")
+                    .innerHTML = "You have got B Grade";
+            }
+            else if (percent >= 60 && percent <  70) {
+                document.querySelector("#result")
+                    .innerHTML = "You have got C Grade";
+            }
+            else if (percent >= 50 && percent <  60) {
+                document.querySelector("#result")
+                    .innerHTML = "You have got D Grade";
+            }
+            else if (percent >= 40 && percent <  50) {
+                document.querySelector("#result")
+                    .innerHTML = "You have got E Grade";
+            }
+            else if (percent => 0 && percent < 40 ) {
+                document.querySelector("#result")
+                    .innerHTML = "I'm Sorry! You are fail";
+            }
+            else {
+                document.querySelector("#result")
+                .innerHTML = "You have entered invalid number";
+            }
+        }
+    </script>
+
+
+    </form>
+</body>
+
+</html>
